@@ -1,4 +1,4 @@
-## Setarea numelui global
+### Setarea numelui global
 
 # Setarea numelui utilizatorului
 git config --global user.name " Numele tau ... "
@@ -10,22 +10,28 @@ git config --global user.email " emailul@tau.com "
 # Citirea email-ului utilizatorului
 git config --global user.email
 
-## Deschiderea editorului Visual Studio Code ca editor default pentru git
+
+### Deschiderea editorului Visual Studio Code ca editor default pentru git
 git config --global core.editor "code --wait"
 
-## Initializeaza proiectul de git local - creaza un folder .git ascuns
+
+### Initializeaza proiectul de git local - creaza un folder .git ascuns
 git init
 
-## Descarca de pe server un proiect de git
+
+### Descarca de pe server un proiect de git
 git clone https://github.com/username/project
 
-## Arata lista de commit-uri
+
+### Arata lista de commit-uri
 git log
 git log --oneline
 
-## Arata statusul fisierelor (daca sunt schimbate)
+
+### Arata statusul fisierelor (daca sunt schimbate)
 git status
 git status -s
+
 
 ### Comenzi de adaugare a fisierelor in STAGED (inainte de creare a commit-ului)
 git add filename
@@ -33,12 +39,25 @@ git add .
 git add filename.*
 git add filename1 filename2 filename3
 
+
 ### Comenzi de creare a commit-ului
 git commit -m " Acesta este un mesaj descriptiv al commit-ului. "
 git commit --message " Acesta este un mesaj descriptiv al commit-ului. "
 
+
 ### Comanda de adaugare + commit (!!! Fisierele trebuie sa fi fost incluse intr-un commit inainte.)
 git commit -am " Acesta este un mesaj descriptiv al commit-ului. "
 
+
 ### Modificarea mesajului ultimului commit
 git commit --amend
+
+
+### Pentru a pune codul pe server
+git push
+git push origin
+
+
+### Pentru a lua codul de pe server
+git pull
+git pull origin
