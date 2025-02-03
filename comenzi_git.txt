@@ -15,6 +15,10 @@ git config --global user.email
 git config --global core.editor "code --wait"
 
 
+### Denumirea branch-ului initial main
+git.config --global.init.defaultBranch main
+
+
 ### Initializeaza proiectul de git local - creaza un folder .git ascuns
 git init
 
@@ -61,3 +65,12 @@ git push origin
 ### Pentru a lua codul de pe server
 git pull
 git pull origin
+
+
+### Pentru lucrul cu branch-uri
+
+## Listarea tuturor branch-urilor
+git branch
+
+## Redenumirea branch-ului curent in ce este dupa -m
+git branch -m main
